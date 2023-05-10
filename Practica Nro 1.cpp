@@ -1,3 +1,6 @@
+/* 1. Leer toda una instrucción por consola (Ejemplo: “int temp;”) y mostrar en
+pantalla letra por letra */
+
 /*
 #include <stdio.h>
 #include <string.h>
@@ -12,6 +15,9 @@ int main() {
     return 0;
 }
 */
+/* 2. Leer un archivo de texto plano (archivo con un pseudocódigo) y muestre en
+pantalla letra por letra*/
+
 
 /*
 #include <stdio.h>
@@ -32,6 +38,11 @@ int main() {
 }
 
 */
+
+/* 3. Crear un programa que cifre un pseudocódigo y otro que lo descifre, según la técnica
+del cifrado de César. El seudocódigo se encuentra en un archivo de texto plano. El
+cifrado de César consiste en mover cada letra un determinado número de espacios en
+el alfabeto (puede ser 3 espacios)*/
 
 /*
 #include <iostream>
@@ -89,6 +100,11 @@ int main() {
 }
 
 */
+
+/* 4. Leer un archivo de texto plano, letra por letra hasta encontrar un separador (espacio,
+tabulador o salto de línea) y mostrar en pantalla si el vocablo se trata de un número
+entero, una palabra o un caracter especial (“+”,”-“,”*”,”/”)*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -106,7 +122,7 @@ int main() {
     char caracter;
     while (archivo_entrada.get(caracter)) {
         if (isdigit(caracter)) {
-            cout << caracter << " = es un n�mero entero." << endl;
+            cout << caracter << " = es un número entero." << endl;
         } else if (isalpha(caracter)) {
             cout << caracter << " = es una palabra." << endl;
         } else if (caracter == '+' || caracter == '-' || caracter == '*' || caracter == '/') {
